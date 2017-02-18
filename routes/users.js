@@ -6,9 +6,15 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-router.get('/view', function(req, res, next) {
-  res.send('user view');
+router.get('/create', function(req, res, next) {
+  var vm= {
+    title : 'Create an Account'
+  };
+  res.render('users/create',vm);
 });
 
+router.get('/view', function(req, res, next) {
+  res.send('respond with a resource dd');
+});
 
 module.exports = router;
