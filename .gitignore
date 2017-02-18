@@ -1,4 +1,4 @@
-.c9/ 
-
-node_modules//data
+.c9/            
+node_modules/
+/data
 mongod-start
